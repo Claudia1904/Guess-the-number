@@ -12,12 +12,12 @@ namespace GuessTheNumber
         public static void GuessNumber()
         {
             Random rnd = new Random();
-            int number = rnd.Next(0, 100);
+            int number = rnd.Next(1, 100);
             int yourNumber = 0;
             
             while(yourNumber != number)
             {
-                Console.WriteLine("Please enter a number between 0 and 100: ");
+                Console.WriteLine("Please enter a number between 1 and 100: ");
                 yourNumber = int.Parse(Console.ReadLine());
 
                 if (yourNumber < number)
